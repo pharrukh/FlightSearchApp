@@ -1,4 +1,4 @@
-package com.normuradov.flightsearchapp.ui.theme
+package com.normuradov.flightsearchapp.ui.flight
 
 import com.normuradov.flightsearchapp.data.Favorite
 
