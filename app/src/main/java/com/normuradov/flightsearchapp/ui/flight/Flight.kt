@@ -2,7 +2,7 @@ package com.normuradov.flightsearchapp.ui.flight
 
 import com.normuradov.flightsearchapp.data.Favorite
 
-data class FlightUiState(
+data class Flight(
     val favoriteId: Int = 0,
     val isFavorite: Boolean = false,
     val departureCode: String = "",
@@ -11,7 +11,7 @@ data class FlightUiState(
     val arrivalName: String = ""
 )
 
-fun FlightUiState.toFavorite(): Favorite = Favorite(
+fun Flight.toFavorite(): Favorite = Favorite(
     id = favoriteId,
     departureCode = departureCode,
     destinationCode = arrivalCode
