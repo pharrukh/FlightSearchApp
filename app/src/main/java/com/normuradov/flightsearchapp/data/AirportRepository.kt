@@ -3,6 +3,6 @@ package com.normuradov.flightsearchapp.data
 import kotlinx.coroutines.flow.Flow
 
 interface AirportRepository {
-    fun getAll(): Flow<List<Airport>>
-    fun search(query: String): Flow<List<Airport>>
+    suspend fun getAll(): List<Airport>
+    suspend fun search(query: String): List<Airport>
 }
